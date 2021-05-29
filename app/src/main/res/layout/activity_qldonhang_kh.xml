@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGrey"
+    tools:context=".Javaclass.QLdonhangKH">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarqldh"
+        app:title="Quản lý đơn hàng"
+        android:background="#2979ff"
+        app:titleTextColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+    <ListView
+        android:id="@+id/lvdonhang"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

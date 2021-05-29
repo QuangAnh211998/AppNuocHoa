@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarseach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2979ff">
+
+            <LinearLayout
+                android:id="@+id/seach"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/custom_bacground"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Bạn tìm gì hôm này?"
+                    android:textSize="17dp"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_search_black_24dp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnGioHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:src="@drawable/ic_shopping_cart_black_24dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:text="Nước Hoa theo loại"
+        android:textColor="#212121"
+        android:background="@color/colorWhite"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nam"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonloai"
+            android:text="Nước Hoa Nam"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/nu"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/buttonloai"
+            android:text="Nước Hoa Nữ"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:text="Nước Hoa theo giá"
+        android:textColor="#212121"
+        android:background="@color/colorWhite"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/muc1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/facebook"
+            android:text="Dưới 2tr"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/muc2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/facebook"
+            android:text="2tr - 3tr"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/muc3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="3tr - 4tr"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/facebook"/>
+
+        <Button
+            android:id="@+id/muc4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="trên 4tr"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

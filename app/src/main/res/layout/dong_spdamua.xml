@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/hinhanhsp"
+            android:src="@mipmap/ic_launcher_round"
+            android:adjustViewBounds="true"
+            android:layout_margin="3dp"
+            android:layout_width="140dp"
+            android:layout_height="150dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tensp"
+                android:textSize="19dp"
+                android:text="Tên SP"
+                android:textColor="#212121"
+                android:layout_marginLeft="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/soluongsp"
+                android:textSize="20dp"
+                android:text="Số Lượng"
+                android:textColor="#201E1E"
+                android:layout_marginLeft="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textSize="20dp"
+                    android:text="Giá bán:"
+                    android:textColor="#201e1e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/thanhtien"
+                    android:textSize="20dp"
+                    android:text="a"
+                    android:textColor="@color/colorReb"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ngaymua"
+                android:textSize="20dp"
+                android:text="Ngày mua"
+                android:textColor="#201E1E"
+                android:layout_marginLeft="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

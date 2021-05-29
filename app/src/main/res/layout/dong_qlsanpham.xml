@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemsanpham"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_margin="2dp">
+        <ImageView
+            android:id="@+id/imgsanpham"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvtensp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên Sản phẩm"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvloai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại"
+                android:textColor="#212121"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvxuatxu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xuất xứ"
+                android:textColor="#212121"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvgiaban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Giá"
+                android:textColor="@color/colorReb"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+                <Button
+                    android:id="@+id/btnsua"
+                    android:text="Cập nhật"
+                    android:textSize="16dp"
+                    android:textColor="#2979ff"
+                    android:background="@drawable/facebook"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp" />
+                <Button
+                    android:id="@+id/btnxoa"
+                    android:text="Xóa"
+                    android:textSize="16dp"
+                    android:textColor="#2979ff"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/facebook"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

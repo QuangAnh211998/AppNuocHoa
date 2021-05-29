@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical"
+    tools:context=".Javaclass.SanphamDamua">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbardamua"
+        app:title="Sản phẩm đã mua"
+        android:background="#2979ff"
+        app:titleTextColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtthongbao"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Bạn chưa mua sản phẩm nào, tất cả sản phẩm đã mua sẽ hiển thị ở đây!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        <ListView
+            android:id="@+id/listspdamua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </FrameLayout>
+
+
+</LinearLayout>

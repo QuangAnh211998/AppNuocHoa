@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical"
+    tools:context=".Fragment.ThongkeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2979ff">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Thống kê"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvxacnhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Tìm"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputlayoutnam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="20dp"
+        android:background="@color/colorWhite"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edtnamtk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Nhập vào năm thống cần thống ke "
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radiobtnnam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Thống kê theo năm(5 năm một)"
+            android:textSize="17dp"/>
+
+        <RadioButton
+            android:id="@+id/radiobtnthang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="17dp"
+            android:text="Thống kê theo tháng(12 tháng của năm)" />
+
+    </RadioGroup>
+
+
+  <com.github.mikephil.charting.charts.BarChart
+      android:id="@+id/barchar"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  </com.github.mikephil.charting.charts.BarChart>
+
+</LinearLayout>

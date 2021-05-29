@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:weightSum="10"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imggiohang"
+            android:layout_margin="3dp"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="140dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tengiohang"
+            android:text="Tên mặt hàng"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#424242"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/giagiohang"
+            android:layout_marginTop="5dp"
+            android:text="Giá mặt hàng"
+            android:textSize="20dp"
+            android:textColor="@color/colorReb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnminus"
+                android:focusable="false"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:text="-"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvvalues"
+                android:focusable="false"
+                android:background="@null"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnplus"
+                android:focusable="false"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:text="+"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

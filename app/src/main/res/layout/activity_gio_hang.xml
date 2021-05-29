@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Javaclass.GioHang">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbargiohang"
+        app:title="Giỏ hàng"
+        android:background="#2979ff"
+        app:titleTextColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+    <LinearLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvthongbao"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:text="Giỏ hàng của bạn đang trống"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:id="@+id/lvgiohang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="Tổng tiền : "
+                    android:textSize="30dp"
+                    android:textColor="@color/colorReb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvtongtien"
+                    android:text="Số tiền"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorReb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_toRightOf="@+id/btn_danghang"
+            android:id="@+id/btn_muatiep"
+            android:text="Tiếp tục mua hàng"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/buttonmua"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btn_danghang"
+            android:text="Đặt hàng"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
